@@ -2,13 +2,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--main-backgroung-beige-color);
+    color: var(--main-beige-color);
+    background-color: var(--main-beige-color);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 :root{
     --main-red-color: #C61313;
     --main-green-color: #06510f;
-    --main-backgroung-beige-color: #FBFBF3;
-
+    --main-beige-color: #FBFBF3;
 }
 
 body{
