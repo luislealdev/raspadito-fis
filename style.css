@@ -12,9 +12,38 @@
     --main-green-color: #06510f;
     --main-beige-color: #FBFBF3;
 }
-
 body{
     display: flex;
     justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* MAIN TITLE STYLES */
+.Main-Title-Container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    width: 75vw;
+}
+.Main-Title-Div{
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-red-color);
+    margin-top: 10px;
+}
+.Secondary-Div{
+    height: 5px;
+}
+.White-Space{
+    width: 25%;
+}
+.Title-Container{
+    padding: 10px;
+}
+.Main-Title{
+    background-color: unset;
+    font-size: 22px;
 }
 
