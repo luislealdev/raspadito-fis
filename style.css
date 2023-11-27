@@ -2,8 +2,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: var(--main-backgroung-beige-color);
 }
+:root{
+    --main-red-color: #C61313;
+    --main-green-color: #06510f;
+    --main-backgroung-beige-color: #FBFBF3;
+
+}
+
 body{
     display: flex;
     justify-content: center;
 }
+
