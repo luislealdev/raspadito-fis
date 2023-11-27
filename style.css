@@ -84,7 +84,7 @@ main{
     justify-content: space-between;
     top: 70px;
 }
-.Main-Input{
+#Main-Input{
     border: none;
     width: 80%;
     padding: 22px 15px;
