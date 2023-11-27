@@ -13,10 +13,16 @@
     --main-beige-color: #FBFBF3;
 }
 body{
-    display: flex;
-    justify-content: center;
     height: 100vh;
     width: 100vw;
+}
+header{
+    height: 20%;
+}
+main{
+    height: 80%;
+    width: 100%;
+    position: relative;
 }
 
 /* MAIN TITLE STYLES */
@@ -24,7 +30,6 @@ body{
     margin: auto;
     display: flex;
     flex-direction: column;
-    height: 20vh;
     width: 75vw;
 }
 .Main-Title-Div{
@@ -47,3 +52,19 @@ body{
     font-size: 22px;
 }
 
+
+.Assets-Container{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+.Chrithmas-Tree-Left{
+    width: 300px;
+    left: 20px;
+}
+.Chrithmas-Tree-Right{
+    width: 300px;
+    margin-left: 50px;
+}
