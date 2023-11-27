@@ -12,16 +12,25 @@
     --main-green-color: #06510f;
     --main-beige-color: #FBFBF3;
 }
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+input::placeholder{
+    color: var(--main-beige-color);
+    font-size: 20px;
+}
 body{
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 header{
     height: 20%;
 }
 main{
-    height: 80%;
     width: 100%;
+    height: 80%;
     position: relative;
 }
 
@@ -54,17 +63,45 @@ main{
 
 
 .Assets-Container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.Input-Container{
     display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.Main-Input{
+    border: none;
+    width: 50%;
+    background-color: var(--main-red-color);
+    border-radius: 30px;
+    padding: 22px 15px;
+}
+.Asset-Item{
     position: absolute;
     bottom: 0;
-    justify-content: space-between;
-    width: 100%;
 }
 .Chrithmas-Tree-Left{
-    width: 300px;
-    left: 20px;
+    height: 75%;
+    left: -140px;
 }
 .Chrithmas-Tree-Right{
-    width: 300px;
-    margin-left: 50px;
+    height: 75%;
+    right: -140px;
+}
+.Gift-Box{
+    z-index: 20;
+    width: 8%;
+}
+.Gift-Box-1{
+    left: 80px;
+} 
+.Gift-Box-2{
+    left: 130px;
+    width: 12%;
+}
+.Gift-Box-3{
+    right: 80px;
 }
