@@ -90,7 +90,7 @@ main{
     padding: 22px 15px;
     background-color: var(--main-red-color);
 }
-.Main-Input-Button{
+#Main-Input-Button{
     width: 60px;
     height: 62px;
     border: none;
