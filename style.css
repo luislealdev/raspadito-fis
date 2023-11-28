@@ -1,79 +1,94 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: var(--main-beige-color);
-    background-color: var(--main-beige-color);
     font-family: 'Montserrat', sans-serif;
     font-family: 'Playfair Display', serif;
 }
-:root{
+
+:root {
     --main-red-color: #C61313;
     --main-green-color: #06510f;
     --main-beige-color: #FBFBF3;
 }
-i{
+
+i {
     background-color: unset;
 }
-input:focus, textarea:focus, select:focus{
+
+input:focus,
+textarea:focus,
+select:focus {
     outline: none;
 }
-input::placeholder{
+
+input::placeholder {
     color: var(--main-beige-color);
     font-size: 20px;
 }
-body{
+
+body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
     scroll-behavior: unset;
+    background-color: var(--main-beige-color);
 }
-header{
+
+header {
     height: 20%;
 }
-main{
+
+main {
     width: 100%;
     height: 80%;
     position: relative;
 }
 
 /* MAIN TITLE STYLES */
-.Main-Title-Container{
+.Main-Title-Container {
     margin: auto;
     display: flex;
     flex-direction: column;
     width: 75vw;
 }
-.Main-Title-Div{
+
+.Main-Title-Div {
     display: flex;
     justify-content: center;
     background-color: var(--main-red-color);
     margin-top: 10px;
 }
-.Secondary-Div{
+
+.Secondary-Div {
     height: 5px;
 }
-.White-Space{
+
+.White-Space {
     width: 25%;
 }
-.Title-Container{
+
+.Title-Container {
     padding: 10px;
 }
-.Main-Title{
+
+.Main-Title {
     background-color: unset;
     font-size: 22px;
 }
 
 
-.Assets-Container{
+.Assets-Container {
     position: relative;
     width: 100%;
     height: 100%;
 }
-.Input-Container{
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
+
+.Input-Container {
+    left: 0;
+    right: 0;
+    margin-left: auto;
     margin-right: auto;
     overflow: hidden;
     width: 40%;
@@ -84,43 +99,52 @@ main{
     justify-content: space-between;
     top: 70px;
 }
-#Main-Input{
+
+#Main-Input {
     border: none;
     width: 80%;
     padding: 22px 15px;
     background-color: var(--main-red-color);
 }
-#Main-Input-Button{
+
+#Main-Input-Button {
     width: 60px;
     height: 62px;
     border: none;
     border-radius: 40px;
     background-color: var(--main-green-color);
 }
-.Asset-Item{
+
+.Asset-Item {
     position: absolute;
     bottom: 0;
 }
-.Chrithmas-Tree-Left{
+
+.Chrithmas-Tree-Left {
     height: 75%;
     left: -140px;
 }
-.Chrithmas-Tree-Right{
+
+.Chrithmas-Tree-Right {
     height: 75%;
     right: -140px;
 }
-.Gift-Box{
+
+.Gift-Box {
     background-color: unset;
     z-index: 20;
     width: 70px;
 }
-.Gift-Box-1{
+
+.Gift-Box-1 {
     left: 80px;
-} 
-.Gift-Box-2{
+}
+
+.Gift-Box-2 {
     left: 160px;
     width: 100px;
 }
-.Gift-Box-3{
+
+.Gift-Box-3 {
     right: 80px;
 }

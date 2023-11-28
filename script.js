@@ -5,6 +5,6 @@ function evaluateInputState() {
     if (input.value === '') {
         button.style.display = 'none';
     } else {
-        button.style.display = 'block';
+        button.style.display = 'flex';
     }
 }

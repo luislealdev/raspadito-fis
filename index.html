@@ -1,59 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rascadito Navideño</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://luisrrleal.com/styles/leal-styles.css"
+    />
 
-     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/cdb751df44.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/cdb751df44.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Styles CSS -->
-    <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header>
-        <div class="Main-Title-Container">
-            <div class="Main-Title-Div Secondary-Div">
-                <p class="White-Space"></p>
-            </div>
-            <!-- <div id="triangle-left"></div> -->
-            <div class="Main-Title-Div Title-Container">
-                <p class="Main-Title">TIENDITA NAVIDEÑA KAWAII</p>
-            </div>
-            <div class="Main-Title-Div Secondary-Div">
-            </div>
+      <div class="Main-Title-Container">
+        <div class="Main-Title-Div Secondary-Div">
+          <p class="White-Space"></p>
         </div>
+        <div class="Main-Title-Div Title-Container">
+          <p class="Main-Title">TIENDITA NAVIDEÑA KAWAII</p>
+        </div>
+        <div class="Main-Title-Div Secondary-Div"></div>
+      </div>
     </header>
 
     <main>
-        <div class="Assets-Container">
-            <div class="Input-Container">
-                <input 
-                oninput="evaluateInputState()"
-                id="Main-Input" type="text" placeholder="Ingresar nombre de usuario">
-                <button id="Main-Input-Button">
-                    <i class="fa-solid fa-chevron-right fa-xl"></i>
-                </button>
-            </div>
-            <img 
-                class="Asset-Item Chrithmas-Tree-Left"
-                src="./assets/christmas-tree_616662.png" alt="Christhmas-Tree">
-            <img 
-                class="Asset-Item Chrithmas-Tree-Right"
-                src="./assets/christmas-tree_616662.png" alt="Christhmas-Tree">
-            <img class="Asset-Item Gift-Box Gift-Box-1" src="./assets/giftbox.png" alt="">
-            <img class="Asset-Item Gift-Box Gift-Box-2" src="./assets/giftbox.png" alt="">
-            <img class="Asset-Item Gift-Box Gift-Box-3" src="./assets/giftbox.png" alt="">
+      <div class="Assets-Container">
+        <div class="Input-Container">
+          <input
+            oninput="evaluateInputState()"
+            id="Main-Input"
+            type="text"
+            placeholder="Ingresar nombre de usuario"
+          />
+          <a
+            style="display: none"
+            href="/message.html"
+            id="Main-Input-Button"
+            class="flex align-center justify-content"
+          >
+            <i class="fa-solid fa-chevron-right fa-xl"></i>
+          </a>
         </div>
+        <img
+          class="Asset-Item Chrithmas-Tree-Left"
+          src="./assets/christmas-tree_616662.png"
+          alt="Christhmas-Tree"
+        />
+        <img
+          class="Asset-Item Chrithmas-Tree-Right"
+          src="./assets/christmas-tree_616662.png"
+          alt="Christhmas-Tree"
+        />
+        <img
+          class="Asset-Item Gift-Box Gift-Box-1"
+          src="./assets/giftbox.png"
+          alt=""
+        />
+        <img
+          class="Asset-Item Gift-Box Gift-Box-2"
+          src="./assets/giftbox.png"
+          alt=""
+        />
+        <img
+          class="Asset-Item Gift-Box Gift-Box-3"
+          src="./assets/giftbox.png"
+          alt=""
+        />
+      </div>
     </main>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
