@@ -124,3 +124,12 @@ main{
 .Gift-Box-3{
     right: 80px;
 }
+
+
+/* SCRATCHY HTML CSS */
+.Main-Scratchy-Container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
