@@ -9,6 +9,7 @@
 }
 :root{
     --main-red-color: #C61313;
+    --checked-red-color: #f04a4a;
     --main-green-color: #06510f;
     --main-beige-color: #FBFBF3;
 }
@@ -27,6 +28,7 @@ body{
     width: 100vw;
     overflow: hidden;
     scroll-behavior: unset;
+    background-color: var(--main-beige-color);
 }
 header{
     height: 20%;
@@ -128,8 +130,51 @@ main{
 
 /* SCRATCHY HTML CSS */
 .Main-Scratchy-Container{
+    background-color: var(--main-beige-color);
+    padding: 15%;
     width: 100vw;
     height: 100vh;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(2, auto);
+}
+.Scratchy-Title-Container{
+    margin-bottom: 60px;
+    grid-area: 1/1/2/5;
+}
+.Scratchy-Title{
+    color: var(--main-green-color);
+}
+.Gift-Scratchy-Container{
+    width: fit-content;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+}
+.Gift-Image{
+    /* width: 50%; */
+    width: 100px;
+    margin-bottom: 15px;
+}
+.Checkbox{
+    -webkit-appearance: none;
+    appearance: unset;
+    /* width: 30%; */
+    width: 50px;
+    /* height: 30%; */
+    height: 50px;
+	background-color: var(--main-beige-color);
+	border: 4px solid var(--main-red-color);
+	border-radius: 15px;
+	display: inline-block;
+}
+.Checkbox:checked{
+	background-color: var(--main-beige-color);
+	border: 4px solid var(--checked-red-color);
+	/* border-radius: 15px;
+	display: inline-block; */
 }
