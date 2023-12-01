@@ -1,5 +1,4 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: var(--main-beige-color);
@@ -30,10 +29,10 @@ body{
     scroll-behavior: unset;
     background-color: var(--main-beige-color);
 }
-header{
+.Header-Index{
     height: 20%;
 }
-main{
+.Main-Index{
     width: 100%;
     height: 80%;
     position: relative;
