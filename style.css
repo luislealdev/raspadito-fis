@@ -160,7 +160,7 @@ main{
     width: 100px;
     margin-bottom: 15px;
 }
-.Checkbox{
+#Checkbox{
     /* -webkit-appearance: none; */
     appearance: unset;
     /* width: 30%; */
@@ -172,13 +172,13 @@ main{
 	border-radius: 15px;
 	display: inline-block;
 }
-.Checkbox:checked::before {
+#Checkbox:checked::before {
     content: '\2713';
     color: var(--checked-red-color);
     position: absolute;
     transform: translate(35%, -5%);
   }
-.Checkbox:checked{
+#Checkbox:checked{
     font-size: 35px;
     font-weight: bolder;
     color: var(--checked-red-color);
