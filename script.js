@@ -1,6 +1,6 @@
 var input = document.getElementById("Main-Input");
 var button = document.getElementById("Main-Input-Button");
-
+let checksSelected = [];
 // Login Button
 let winner = true;
 let playerName = "";
@@ -28,6 +28,7 @@ window.addEventListener("DOMContentLoaded", function () {
           checkboxes.forEach((cb) => {
             if (!cb.checked) {
               cb.disabled = true;
+              cb.style.border = 'none';
             }
           });
           showResults(); // Llamar a la función para mostrar los resultados
@@ -53,6 +54,8 @@ window.addEventListener("DOMContentLoaded", function () {
           giftImages[index].src = "./assets/christmas-cat.png"; // Mostrar el gatito
           giftImages[index].alt = "Gatito";
         }
+      }else{
+        //Buscar el checkbox que no se checkéo y esconderlo
       }
     });
   }
