@@ -110,7 +110,9 @@ body {
 }
 
 #Main-Input {
+    margin-inline: 10px;
     border: none;
+    font-size: 20px;
     width: 80%;
     padding: 22px 15px;
     background-color: var(--main-red-color);
