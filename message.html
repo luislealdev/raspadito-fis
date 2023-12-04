@@ -81,5 +81,13 @@
   <script>
     var nameToShow = document.getElementById("name");
     nameToShow.textContent = localStorage.getItem("playerName") || "";
+
+    var button = document.getElementById("Main-Input-Button");
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+      playerName = input.value;
+      localStorage.setItem("playerName", playerName);
+      window.location.href = "/message.html";
+    });
   </script>
 </html>
