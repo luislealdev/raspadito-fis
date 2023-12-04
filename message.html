@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
+    <header style="margin-top: -129px">
       <div class="Main-Title-Container">
         <div class="Main-Title-Div Secondary-Div">
           <p class="White-Space"></p>
@@ -38,42 +38,48 @@
       </div>
     </header>
     <main
-      class="flex column justify-content align-center"
-      style="margin-top: -100px"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
     >
-      <div
-        style="background-color: #154314; width: 70%; max-height: 50%"
-        class="flex column white-text p-50 center-text"
-      >
-        <h2 class="f-size-30">Bienvenido <b>Agustín Flores</b></h2>
-        <p class="f-size-24">
+      <div style="background-color: #154314; width: 60%; text-align: center">
+        <h2 style="font-size: 50px">Bienvenido <b id="name"></b></h2>
+        <p style="font-size: 25px">
           A continuación verás 4 regalos, 3 de ellos contienen un objeto igual y
           1 uno diferente, para ganar uno de los increíbles premios necesitas
           adivinar dónde se encuentran los objetos iguales.
         </p>
-        <br />
-        <p>Una vez seleccionado un regalo, no podrás volver atrás.</p>
+        <p style="font-size: 22px">
+          Una vez seleccionado un regalo, no podrás volver atrás.
+        </p>
       </div>
 
       <a
         rel="stylesheet"
-        href="/jugar"
+        href="/scratchy.html"
         class="mt-10 center-text radius-30 p-20"
-        style="background-color: #bf0000; white-space:normal;"
+        style="background-color: #bf0000; white-space: normal"
       >
         Jugar ahora
       </a>
-
-      <img
-        class="Asset-Item Chrithmas-Tree-Left"
-        src="./assets/christmas-tree_616662.png"
-        alt="Christhmas-Tree"
-      />
-      <img
-        class="Asset-Item Chrithmas-Tree-Right"
-        src="./assets/christmas-tree_616662.png"
-        alt="Christhmas-Tree"
-      />
     </main>
+    <img
+      class="Asset-Item Chrithmas-Tree-Left"
+      src="./assets/christmas-tree_616662.png"
+      alt="Christhmas-Tree"
+    />
+    <img
+      class="Asset-Item Chrithmas-Tree-Right"
+      src="./assets/christmas-tree_616662.png"
+      alt="Christhmas-Tree"
+    />
   </body>
+
+  <script>
+    var nameToShow = document.getElementById("name");
+    nameToShow.textContent = localStorage.getItem("playerName") || "";
+  </script>
 </html>

@@ -1,5 +1,6 @@
-var input = document.getElementById('Main-Input');
-var button = document.getElementById('Main-Login-Button');
+var input = document.getElementById("Main-Input");
+var button = document.getElementById("Main-Input-Button");
+
 //Botón para iniciar el juego (message.html)
 //var playButton = document.getElementById('Play-Button');
 
@@ -10,6 +11,7 @@ var button = document.getElementById('Main-Login-Button');
 
 // Login Button
 let winner = true;
+let playerName = "";
 
 function evaluateInputState() {
   if (input.value === "") {
@@ -18,6 +20,13 @@ function evaluateInputState() {
     button.style.display = "flex";
   }
 }
+
+button.addEventListener("click", function (e) {
+  e.preventDefault();
+  playerName = input.value;
+  localStorage.setItem("playerName", playerName);
+  window.location.href = "/message.html";
+});
 
 function generateRandomGifts() {
   let giftsArray = [1, 1, 1, 1];
@@ -36,10 +45,7 @@ function generateRandomGifts() {
       if (giftValue === 0) {
         winner = false;
         console.log("PERDISTE D:");
-      } 
+      }
     });
   }
 }
-
-
-
