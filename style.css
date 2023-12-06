@@ -177,17 +177,18 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    /* gap: 70px; */
+    gap: 25px;
     /* grid-template-columns: repeat(4, 20%);
     grid-template-rows: repeat(2, auto); */
 }
 
-.Scratchy-Title-Container {
+/* .Scratchy-Title-Container, .Winner-Title-Container {
     margin-bottom: 20px;
     grid-area: 1/1/2/5;
-}
+} */
 
-.Scratchy-Title {
+.Scratchy-Title , .Winner-Text-Message{
     color: var(--main-green-color);
 }
 
@@ -230,9 +231,13 @@ input[type="checkbox"]:checked {
     border: 4px solid var(--checked-red-color);
 }
 
+.Winner-Text-Message{
+    width: fit-content;
+    margin: auto;
+}
 #Coupon-Container{
     width: 400px;
-    height: 180px;
+    height: 160px;
     display: flex;
     position: relative;
     /* align-items: center; */
@@ -246,8 +251,8 @@ input[type="checkbox"]:checked {
     height: 100%;
 }
 .White-Coupon-Ball{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: var(--main-beige-color);
     border-radius: 100%;
 }
@@ -296,3 +301,4 @@ input[type="checkbox"]:checked {
     bottom: -17px;
     transform: translateX(-50%);
 }
+
