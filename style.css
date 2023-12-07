@@ -71,6 +71,9 @@ body {
     font-size: 22px;
 }
 
+#winner-name{
+    color: var(--main-green-color);
+}
 
 .Assets-Container {
     position: relative;
