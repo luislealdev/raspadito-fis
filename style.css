@@ -14,21 +14,6 @@
     --main-beige-color: #FBFBF3;
 }
 
-i {
-    background-color: unset;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-    outline: none;
-}
-
-input::placeholder {
-    color: var(--main-beige-color);
-    font-size: 20px;
-}
-
 body {
     height: 100vh;
     width: 100vw;
@@ -118,6 +103,16 @@ body {
     background-color: var(--main-red-color);
 }
 
+#Main-Input:focus,
+textarea:focus {
+    outline: none;
+}
+
+#Main-Input::placeholder {
+    color: var(--main-beige-color);
+    font-size: 20px;
+}
+
 #Main-Input-Button {
     width: 60px;
     height: 62px;
@@ -129,6 +124,10 @@ body {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+}
+
+#Right-Arrow-Icon{
+    background-color: unset;
 }
 
 .Asset-Item {
