@@ -297,11 +297,21 @@ input[type="checkbox"]:checked {
 .Ball-Top {
     position: absolute;
     top: -17px;
-    transform: translateX(-50%);
+    transform: translateX(-45%);
 }
 .Ball-Bottom {
     position: absolute;
     bottom: -17px;
-    transform: translateX(-50%);
+    transform: translateX(-45%);
 }
-
+.White-Line-Container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    width: 3px;
+}
+.White-Line{
+    background-color: var(--main-beige-color);
+    height: 7%;
+}
