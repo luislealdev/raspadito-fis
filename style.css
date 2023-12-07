@@ -243,6 +243,7 @@ input[type="checkbox"]:checked {
     height: 160px;
     display: flex;
     position: relative;
+    font-size: 25px;
     /* align-items: center; */
     /* font-size: 30px; */
 }
